@@ -2,13 +2,12 @@
 
 [**V2Ray**](https://github.com/v2fly/v2ray-core) 路由规则文件加强版，可代替 V2Ray 官方 `geoip.dat` 和 `geosite.dat`，适用于 [V2Ray](https://github.com/v2fly/v2ray-core)、[Xray-core](https://github.com/XTLS/Xray-core)、[mihomo](https://github.com/MetaCubeX/mihomo/tree/Meta)、[hysteria](https://github.com/apernet/hysteria)、[Trojan-Go](https://github.com/p4gefau1t/trojan-go)、[leaf](https://github.com/eycorsican/leaf)。使用 GitHub Actions 北京时间每天早上 6 点自动构建，保证规则最新。
 
-在 `jaguarocean` fork 链路中，本仓应优先消费 fork 自己维护的上游源仓：
+在 `jaguarocean` fork 链路中，本仓应优先消费 fork 自己维护的 `Loyalsoldier` 系上游源仓：
 
 - `jaguarocean/domain-list-custom`
-- `jaguarocean/dnsmasq-china-list`
 - `jaguarocean/geoip`
 
-后续如果要调整直连、代理、广告或语义 provider 的边界，应该先改这些上游源仓，再由本仓重新生成 `release` 产物。
+而 `felixonmars/dnsmasq-china-list`、`v2fly/domain-list-community`、`crazy-max/WindowsSpyBlocker` 这类更上游项目仍应保持原始来源，不应伪装成 fork 自己维护。
 
 ## 规则文件生成方式
 
